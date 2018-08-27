@@ -45,7 +45,7 @@ public class Tarea {
                 + "<h3>Por favor ingrese los números a ser procesados</h3>"
                 + "<form action=\"/results\">"
                 + "  Ingrese los números separados por un espacio:<br>"
-                + "  <input type=\"text\" name=\"firstname\" value=\"\">"
+                + "  <input type=\"text\" name=\"numbers\" value=\"\">"
                 + "  <br>"
                 + "  <br> <br>"                  
                 + "  <input type=\"submit\" value=\"Enviar\">"
@@ -57,7 +57,7 @@ public class Tarea {
     }
 
     private static String resultsPage(Request req, Response res) {        
-        String[] arre=req.queryParams("firstname").split("\\s+");
+        String[] arre=req.queryParams("numbers").split("\\s+");
         for(int a=0;a<arre.length;a++){
             lista.addLast(Float.parseFloat(arre[a]));
         }
