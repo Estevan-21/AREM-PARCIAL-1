@@ -56,16 +56,8 @@ public class ReadWrite {
         }    
 
         // {nombre:"filename.java",directorio:"undirectorio-imaginario"}
-        String result="{\"lista\":"+"\""+lista+"\""+",\"maximo\":"+"\""+calc.getMax(lista)+"\""+",\"minimo\":"+"\""+calc.getMin(lista)+"\""+",\"suma\":"+"\""+calc.getSum(lista)+"\""+",\"multiplicacion\":"+"\""+calc.getMult(lista)+"\""+"}";
-        String pageContent
-                = "<!DOCTYPE html>"
-                + "<html>"
-                + "<body>"                
-                + "<h2>AREM 2018-2</h2>"
-                + result
-                + "</body>"
-                + "</html>";
-        return pageContent;
+        String result="{\"lista\":"+"\""+lista+"\""+",\"maximo\":"+"\""+calc.getMax(lista)+"\""+",\"minimo\":"+"\""+calc.getMin(lista)+"\""+",\"suma\":"+"\""+calc.getSum(lista)+"\""+",\"multiplicacion\":"+"\""+calc.getMult(lista)+"\""+"}";       
+        return result;
     }
     
      /**
