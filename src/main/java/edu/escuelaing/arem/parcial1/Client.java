@@ -35,6 +35,7 @@ public class Client {
         /**
         * Lee la segunda pagina del web server con un ejemplo de haber insertado la lista que contiene los números 1 2 3  
         */
+        System.out.println("JSON RESULTADO:");
         URL url2 = new URL("https://fast-hamlet-11078.herokuapp.com/results?num=1+2+3");
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(url2.openStream()))) {
 
